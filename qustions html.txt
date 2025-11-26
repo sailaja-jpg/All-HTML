@@ -1,0 +1,440 @@
+1)Father of HTML
+WWW.tim Berneis Lie(1995)
+2)By using html and css we can build static webpages
+3)To convert from static to dynamic we use JS
+4)All the browsers understand HTML language hence we run html files in all the different Browsers
+5)HTML
+Hyper Text Markup Language
+i)Hyper Text: SEt of links present in document which will be get hyper to some other places that text is called as Hypertext
+ we can provide links on webpage by using HTML
+ii)Markup Language: Language which represents data on the webpage by using Markup Tags is called Markup Language
+Note:All Formatting tags are inline level elements
+
+Interview Questions on HTML
+1)Is HTML is a Case Sensitive?No, HTML is not case-sensitive.
+
+That means you can write HTML tags, attributes, and element names in uppercase, lowercase, or mixed case, and they will still work the same way.
+
+✅ Example – all of these are valid:
+
+<html>
+<HEAD>
+<Title>My Page</Title>
+</HEAD>
+<BODY>
+<h1>Hello World!</h1>
+</BODY>
+</html>
+
+
+However, the best practice is to write HTML tags and attributes in lowercase, especially when using XHTML or working with modern HTML5, because it improves readability and consistency.
+2)What is HTML?Why HTML?
+HTML stands for HyperText Markup Language.
+It is the standard language used to create and design web pages.
+HTML defines the structure and layout of a webpage using a set of tags (called elements).
+🧩 In simple words:
+HTML tells the web browser what to display — for example, text, images, links, tables, forms, etc.
+✅ Example:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Web Page</title>
+</head>
+<body>
+  <h1>Welcome to My Website!</h1>
+  <p>This is a paragraph of text.</p>
+</body>
+</html>
+
+
+💡 Why HTML? (Importance of HTML)
+Here’s why HTML is important and widely used:
+
+
+🌍 Foundation of Web Pages – Every website you visit is built using HTML as its basic structure.
+
+
+🧱 Defines Structure – It organizes content like headings, paragraphs, images, and links.
+
+
+🎨 Works with CSS & JavaScript – HTML structures the page, CSS styles it, and JavaScript adds interactivity.
+
+
+⚙️ Platform Independent – HTML works on all browsers and devices.
+
+
+📄 Easy to Learn – Simple syntax makes it beginner-friendly.
+
+
+
+🏁 In summary:
+
+HTML = Language that gives structure to web pages.
+Why HTML? = Because it is the foundation of the web, making it possible to display and organize content in browsers.
+    
+
+3)how to link two web pages?   
+To link two web pages, we use the <a> tag (called the anchor tag).
+The anchor tag creates hyperlinks — clickable text or images that take users from one page to another.
+
+✅ Example: Linking Two Web Pages
+Suppose you have two files:
+
+
+index.html (Home Page)
+
+
+about.html (About Page)
+
+
+Here’s how you can link them:
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>Click below to learn more about us:</p>
+  <a href="about.html">Go to About Page</a>
+</body>
+</html>
+
+about.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+</head>
+<body>
+  <h1>About Our Website</h1>
+  <p>This page contains information about our site.</p>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
+
+
+💡 Explanation
+
+
+<a> tag → Defines a hyperlink.
+
+
+href attribute → Specifies the destination URL or file name.
+
+
+Example:
+<a href="about.html">Go to About Page</a>
+
+When clicked, it opens about.html.
+
+
+
+🧩 In short:
+👉 To link two web pages, use the <a href="page2.html">Link Text</a> tag.
+
+Would you like me to show how to link web pages in different folders (e.g., using relative and absolute paths)? It’s a common next step.                             cc
+4)Difference between Get and Post Method
+get
+* when we have form data when we click on submit button the form data is visibe on the URL
+*its is secured
+*Takes n numbers of characters in URL
+  When you submit a form in HTML, data can be sent to the server using two main methods — GET and POST.
+
+Both are used in the <form> tag’s method attribute:
+
+<form action="submit.php" method="GET">   <!-- or method="POST" -->
+  ...
+</form>
+
+🔍 1. GET Method
+
+✅ Features:
+
+Sends form data through the URL (visible in the address bar).
+
+Example:
+https://example.com/submit.php?name=John&age=20
+
+Used mainly for retrieving data (not for sending sensitive info).
+
+📦 Data Limit: Limited (around 2000 characters).
+🔒 Security: Less secure — data visible in URL.
+🔁 Can be bookmarked: Yes (since data is in the URL).
+
+🧩 Example:
+
+<form action="search.php" method="GET">
+  <input type="text" name="query" placeholder="Search...">
+  <input type="submit" value="Search">
+</form>
+
+🔐 2. POST Method
+
+✅ Features:
+
+Sends form data in the background (HTTP body) — not visible in the URL.
+
+Used for sending or updating data (like registration, login, feedback forms).
+
+📦 Data Limit: No size limit (can send large data).
+🔒 Security: More secure than GET (data not shown in address bar).
+🔁 Can be bookmarked: No.
+
+🧩 Example:
+
+<form action="register.php" method="POST">
+  <input type="text" name="username" placeholder="Enter username">
+  <input type="password" name="password" placeholder="Enter password">
+  <input type="submit" value="Register">
+</form>
+
+5)Create 5*5 Table
+✅ HTML Code Example
+<!DOCTYPE html>
+<html>
+<head>
+  <title>5x5 Table Example</title>
+</head>
+<body>
+
+  <h2>5 × 5 Table</h2>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+      <th>Header 5</th>
+    </tr>
+    <tr>
+      <td>Row 1, Col 1</td>
+      <td>Row 1, Col 2</td>
+      <td>Row 1, Col 3</td>
+      <td>Row 1, Col 4</td>
+      <td>Row 1, Col 5</td>
+    </tr>
+    <tr>
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+      <td>Row 2, Col 3</td>
+      <td>Row 2, Col 4</td>
+      <td>Row 2, Col 5</td>
+    </tr>
+    <tr>
+      <td>Row 3, Col 1</td>
+      <td>Row 3, Col 2</td>
+      <td>Row 3, Col 3</td>
+      <td>Row 3, Col 4</td>
+      <td>Row 3, Col 5</td>
+    </tr>
+    <tr>
+      <td>Row 4, Col 1</td>
+      <td>Row 4, Col 2</td>
+      <td>Row 4, Col 3</td>
+      <td>Row 4, Col 4</td>
+      <td>Row 4, Col 5</td>
+    </tr>
+    <tr>
+      <td>Row 5, Col 1</td>
+      <td>Row 5, Col 2</td>
+      <td>Row 5, Col 3</td>
+      <td>Row 5, Col 4</td>
+      <td>Row 5, Col 5</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+💡 Explanation
+
+<table> → creates the table
+
+<tr> → defines a table row
+
+<th> → defines a table header cell (bold & centered)
+
+<td> → defines a table data cell
+6)How to upload image on web page?
+How to Upload (Display) an Image on a Web Page
+
+To show an image on a webpage, we use the <img> tag in HTML.
+
+✅ Basic Syntax
+<img src="image.jpg" alt="Description of image">
+
+🧩 Explanation of Attributes
+Attribute	Purpose
+src	Specifies the path or URL of the image file.
+alt	Provides alternative text (displayed if the image can’t load).
+width & height	Used to set image size (in pixels or %).
+📸 Example 1 – Image from Same Folder
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Example</title>
+</head>
+<body>
+
+  <h2>My Favorite Picture</h2>
+  <img src="flower.jpg" alt="A beautiful flower" width="300" height="200">
+
+</body>
+</html>
+
+
+🗂️ Make sure the image file (flower.jpg) is in the same folder as your HTML file.
+
+🌐 Example 2 – Image from Online URL
+<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl Image" width="300">
+
+
+This displays an image directly from the web using its URL.
+
+🖼️ Example 3 – Image from a Subfolder
+
+If your image is inside an “images” folder:
+
+<img src="images/pic1.jpg" alt="Sample Image">
+
+⚙️ In short:
+
+To display an image → use the <img> tag with the src and alt attributes.
+
+Example:
+
+<img src="photo.jpg" alt="My Photo">
+7)Difference b/w anchor tag and form
+Let’s clearly understand the difference between the <a> (anchor) tag and the <form> tag in HTML 👇
+
+7️⃣ Difference Between Anchor Tag and Form
+
+Both are used for navigation or interaction — but they serve different purposes.
+
+🔗 1. Anchor Tag (<a>)
+
+✅ Purpose:
+Used to create hyperlinks — to link one page, section, or website to another.
+
+🧩 Syntax:
+
+<a href="about.html">Go to About Page</a>
+
+
+💡 Key Points:
+
+Navigates to another web page or URL.
+
+Uses the href attribute (hyperlink reference).
+
+Does not send data to the server.
+
+Used for simple navigation, like menus or buttons.
+
+📝 2. Form Tag (<form>)
+
+✅ Purpose:
+Used to collect user input (like name, email, password) and send it to a server for processing.
+
+🧩 Syntax:
+
+<form action="submit.php" method="POST">
+  <input type="text" name="username" placeholder="Enter name">
+  <input type="submit" value="Submit">
+</form>
+
+
+💡 Key Points:
+
+Used for collecting and submitting data.
+
+Uses action (target page) and method (GET/POST).
+
+Can contain form elements like <input>, <select>, <textarea>, etc.
+
+Sends data to a server for processing (e.g., login, registration).
+
+📊 Comparison Table
+Feature	<a> Tag (Anchor)	<form> Tag
+Purpose	Navigates between web pages	Collects and sends user data
+Attributes	href, target	action, method
+Data Submission	❌ No	✅ Yes
+User Input Fields	❌ No	✅ Yes (<input>, <select>, etc.)
+Typical Use	Links, menus, navigation	Login, registration, search, feedback
+Example	<a href="home.html">Home</a>	<form action="login.php" method="POST">…</form>
+🏁 In short:
+
+🔗 Anchor tag (<a>) → Used for navigation (moves between pages).
+📝 Form tag (<form>) → Used for data collection and submission to a server.
+8)Difference b/w HTML4 and HTML5 
+HTML5
+*HTML5 we can run in mobile
+*All browsers supports HTML5
+*Semantic Tags are implemented
+*HTML 5 supports JS to run in background
+*Media Tags are fully supported in HTML5
+HTML4
+*HTML4 we cannot run in mobile
+*Only limited Browsers supports HTML4
+*Semantic Tags are not implemented
+*Media Tags are fully supported in HTML5
+*HTML 4 not support JS to run  in background
+9) write an HTML structure
+9️⃣ Basic HTML Structure
+
+Here’s what a complete HTML document looks like 👇
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Web Page</title>
+</head>
+<body>
+
+  <h1>Welcome to My Website!</h1>
+  <p>This is my first HTML page.</p>
+
+</body>
+</html>
+
+🧩 Explanation of Each Part
+Part	Description
+<!DOCTYPE html>	Tells the browser that this is an HTML5 document.
+<html>	The root element that contains the entire web page.
+<head>	Contains information about the page (metadata, title, links, etc.).
+<title>	Sets the title of the page (shown in the browser tab).
+<body>	Contains the content that appears on the webpage (text, images, links, etc.).
+✅ Example Output in Browser
+
+Welcome to My Website!
+This is my first HTML page.
+
+🏁 In short:
+
+Every HTML page starts with
+<!DOCTYPE html> → <html> → <head> → <body>
+and ends with </body> and </html>.
+10)Define Terms
+Target 
+action
+Name attributes
+cell spacing
+cell padding 
+rowspan columnspan
+iframes
+11)Explain importance of semantic tags
+12)Difference b/w paired and unpaired tag
+13)what is void tag empty tag
+14)create zomato page using all html part
+15)create an nested list of food items
+16)Explain about HTML IN 10 LINES
+17)explain why we need Tags and elements with an example
+18)wt are static and dynamic webpages
+19)Define webpage website and webserver
+20)Difference b/w webpage and web applications
+21)why HTML  is called Markup Language?
+22)What is meta?Explain how it works
+23)Explain methods of forms.

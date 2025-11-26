@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+     <header section>
+        <h1>My Html Website</h1>
+        <p>Learned HTML tags, and elements, semantic tags formatting tags</p>
+
+     </header>
+     <!-- NAVIGATION BAR -->
+     <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Articles">Articles</a></li>
+            <li><a href="#table">table</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+     </nav> 
+        <!--Main content  -->
+        <main>
+            <!-- About Section -->
+             <section id="about">
+                <h2>About this Website</h2>
+                <p>This is simple static website built entirely with HTML it contains</p>
+             </section>
+             <!-- Article -->
+              <section id="Articles">
+                <h2>Articles</h2>
+                <article>
+                    <h3>Understanding  some semantic Tags</h3>
+                    <p>Semantic HTML gives meaning to content makes easier for browsers and screen reader to our page></p>
+                </article>
+
+                <article>
+                    <h3>Benefits of Using proper Structure</h3>
+                    <p> well structure data of HTML helps with Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat laudantium, tempore ipsa quas laboriosam magnam voluptas voluptatibus fugiat sed necessitatibus a minus deleniti voluptates nemo voluptate eius ut quaerat.>
+
+                    </p>
+
+                </article>
+                
+              
+              </section>
+              <!-- Table Section -->
+               <section id="table"> <h2>Website Data Table</h2>
+            <table border="2" cellpadding="8" cellspacing="0">
+                <caption>Example of a Simple Table</caption>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                        <th>Difficult</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Structure and content of web pages</td>
+                        <td>easy</td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Css</td>
+                        <td>Styling and Layout of web</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Java Script</td>
+                        <td>Interactivity and logic for webpages</td>
+                        <td>Hard</td>
+                    </tr>
+                </tbody>
+            </table></section>
+            <!-- Contact form -->
+        <section id="contact">
+            <h2>contact us</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="planetchoice">Select your planet</label>
+            <select id="planetchoice"name="planetchoice">
+                <optgroup label="Inner Planets">
+                    <option value="Mercury">Mercury</option>
+                    <option value="mars">Mars</option>
+                    <option value="venus">venus</option>
+                    <option value="jupiter">jupiter</option>
+                </optgroup>
+                <optgroup>
+                    <optgroup label="Distnt world">
+                         <option value="pluto">pluto</option>
+                          <option value="saturnr">saturn</option> 
+                    
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="spacecraft">Preffered Spacecraft:</label>
+            <Input list="craftlist" id="spacecraft" name="spacecraft" placeholder="start typing">
+                <datalist id="craftlist">
+                    <option value="nebula">
+                        
+                    </option>
+                </datalist>
+                <br> <br>
+                <button type="submit">Registration</button>
+                <button type="Reset">about Data</button>
+                <br><br>
+                <label for="travelernotes">Special Instructions:</label><br>
+                <textarea id="travlerNotes" name="travelerNotes" rows="5 "cols="40" placeholder="Mention travelernotes"></textarea>
+
+                </fieldset>
+            </form>
+        </section>
+        </main>
+        <!-- footer section -->
+         <footer>
+            <p>&copyrights: My website 2025</p>
+         </footer>
+</body>
+</html>
